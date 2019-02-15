@@ -29,7 +29,12 @@ function novaLinha(usuario, numeroPalavras) {
 
 function removeLinha(event){
     event.preventDefault();
-    $(this).parent().parent().remove();
+    var linha = $(this).parent().parent();
+
+    linha.fadeOut();
+    setTimeout(function() {
+        linha.remove();
+    });
 }
 
 function mostraPlacar() {
