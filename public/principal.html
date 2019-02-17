@@ -13,6 +13,11 @@
         <h1 class="center">Alura Typer</h1>
         <p class="frase center">Esta frase tem cinco palavras.</p>
     
+        <div class="center">
+            <img src="/img/spinner.gif" alt="Spinner" id="spinner">
+            <p id="erro">Ocorreu um erro, tente novamente</p>
+        </div>
+
         <ul class="informacoes center">
             <li><i class="small material-icons icones">description</i><span id="tamanho-frase">0</span> palavras</li>
             <li><i class="small material-icons icones">query_builder</i><span id="tempo-digitacao">3</span> segundos</li>
@@ -30,6 +35,9 @@
                 <i class="material-icons">assignment</i>
             </a>
 
+            <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue">
+                <i class="material-icons">shuffle</i>
+            </a>            
         </div>
         
         <ul class="center">
@@ -58,5 +66,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
 </body>
 </html>

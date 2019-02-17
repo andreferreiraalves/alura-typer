@@ -10,6 +10,17 @@ function inserePlacar(){
 
     corpoTabela.append(linha);
     // corpoTabela.prepend(linha);
+    $('.placar').slideDown(500);
+    scrollPlacar();
+}
+
+function scrollPlacar() {
+    var posicaoPlacar = $('.placar').offset().top;
+
+    $("body").animate(
+        {
+            scrollTop: posicaoPlacar + "px"
+        }, 1000);    
 }
 
 function novaLinha(usuario, numeroPalavras) {
@@ -38,5 +49,5 @@ function removeLinha(event){
 }
 
 function mostraPlacar() {
-    $('.placar').slideToggle(600);
-}
+    $('.placar').stop().slideToggle(300);
+} 
